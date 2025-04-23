@@ -67,11 +67,10 @@ cargo run
 
 3. Open a web browser and navigate to:
    - [http://127.0.0.1:7878](http://127.0.0.1:7878) - For the greeting page
-   - ![image](https://github.com/user-attachments/assets/2ee5a407-bd04-4a16-a498-0093a35b1974)
+     ![image](https://github.com/user-attachments/assets/2ee5a407-bd04-4a16-a498-0093a35b1974)
    - [http://127.0.0.1:7878/sleep](http://127.0.0.1:7878/sleep) - For the delayed response
    - Any other path for a 404 error
-   - ![image](https://github.com/user-attachments/assets/77132deb-0781-4d2e-9299-a230567c3e27)
-![image](https://github.com/user-attachments/assets/337555de-7788-49cb-b08e-d2e1e046a658)
+     ![image](https://github.com/user-attachments/assets/77132deb-0781-4d2e-9299-a230567c3e27)
 
 ### Testing Concurrency
 
@@ -79,6 +78,7 @@ To demonstrate the multithreaded capability:
 
 1. Open one browser tab and navigate to [http://127.0.0.1:7878/sleep](http://127.0.0.1:7878/sleep)
 2. Immediately open another tab and navigate to [http://127.0.0.1:7878](http://127.0.0.1:7878)
+![image](https://github.com/user-attachments/assets/337555de-7788-49cb-b08e-d2e1e046a658)
 
 The second request will be processed immediately, even while the first request is still "sleeping" - demonstrating the benefits of multithreaded request handling.
 
